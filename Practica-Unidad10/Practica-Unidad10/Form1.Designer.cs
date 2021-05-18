@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Movil = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.Guardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,6 +45,7 @@
             this.tNombre.Name = "tNombre";
             this.tNombre.Size = new System.Drawing.Size(163, 20);
             this.tNombre.TabIndex = 0;
+            this.tNombre.TextChanged += new System.EventHandler(this.tNombre_TextChanged);
             // 
             // tTelefono
             // 
@@ -59,6 +60,7 @@
             this.tApellidos.Name = "tApellidos";
             this.tApellidos.Size = new System.Drawing.Size(159, 20);
             this.tApellidos.TabIndex = 2;
+            this.tApellidos.TextChanged += new System.EventHandler(this.tApellidos_TextChanged);
             // 
             // tListaSocios
             // 
@@ -68,6 +70,7 @@
             this.tListaSocios.ReadOnly = true;
             this.tListaSocios.Size = new System.Drawing.Size(763, 361);
             this.tListaSocios.TabIndex = 3;
+            this.tListaSocios.TextChanged += new System.EventHandler(this.tListaSocios_TextChanged);
             // 
             // label1
             // 
@@ -98,14 +101,14 @@
             this.label3.Text = "Lista Socios";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Movil
+            // label4
             // 
-            this.Movil.AutoSize = true;
-            this.Movil.Location = new System.Drawing.Point(516, 15);
-            this.Movil.Name = "Movil";
-            this.Movil.Size = new System.Drawing.Size(32, 13);
-            this.Movil.TabIndex = 7;
-            this.Movil.Text = "Movil";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(516, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Móvil";
             // 
             // Guardar
             // 
@@ -115,6 +118,7 @@
             this.Guardar.TabIndex = 8;
             this.Guardar.Text = "Guardar";
             this.Guardar.UseVisualStyleBackColor = true;
+            this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
             // 
             // Form1
             // 
@@ -122,7 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Guardar);
-            this.Controls.Add(this.Movil);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -146,7 +150,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label Movil;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Guardar;
     }
 }

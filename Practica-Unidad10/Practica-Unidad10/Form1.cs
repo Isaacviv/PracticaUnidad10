@@ -26,5 +26,29 @@ namespace Practica_Unidad10
         {
             
         }
+
+        private void Guardar_Click(object sender, EventArgs e)
+        {
+            string nombre = tNombre.Text;
+            string apellidos = tApellidos.Text;
+            string telefono = tTelefono.Text;
+            string socio = nombre + " " + apellidos + " " + telefono;
+            tListaSocios.Text += socio + "\r\n";
+        }
+
+        private void tNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tApellidos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tListaSocios_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
