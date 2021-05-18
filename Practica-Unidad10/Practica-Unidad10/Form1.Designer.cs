@@ -45,6 +45,7 @@
             this.tNombre.Name = "tNombre";
             this.tNombre.Size = new System.Drawing.Size(163, 20);
             this.tNombre.TabIndex = 0;
+            this.tNombre.TextChanged += new System.EventHandler(this.tNombre_TextChanged);
             // 
             // tTelefono
             // 
@@ -59,6 +60,7 @@
             this.tApellidos.Name = "tApellidos";
             this.tApellidos.Size = new System.Drawing.Size(159, 20);
             this.tApellidos.TabIndex = 2;
+            this.tApellidos.TextChanged += new System.EventHandler(this.tApellidos_TextChanged);
             // 
             // tListaSocios
             // 
@@ -68,6 +70,7 @@
             this.tListaSocios.ReadOnly = true;
             this.tListaSocios.Size = new System.Drawing.Size(763, 361);
             this.tListaSocios.TabIndex = 3;
+            this.tListaSocios.TextChanged += new System.EventHandler(this.tListaSocios_TextChanged);
             // 
             // label1
             // 
@@ -115,6 +118,7 @@
             this.Guardar.TabIndex = 8;
             this.Guardar.Text = "Guardar";
             this.Guardar.UseVisualStyleBackColor = true;
+            this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
             // 
             // Form1
             // 
